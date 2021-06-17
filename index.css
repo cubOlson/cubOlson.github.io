@@ -247,7 +247,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .btn--pink {
-    background: var(--pink);
+    background: var(--black);
     transition: all 0.2s;
 }
 
@@ -408,18 +408,18 @@ body:not(.user-is-tabbing) a:focus {
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
          url('./images/Robit.gif');
-        background-size: 60%;
+        background-size: 80%;
+        background-position: 50% 50%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
 }
 
 .header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
 }
 
 .header__text p {
